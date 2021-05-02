@@ -1,0 +1,117 @@
+<div class="container pt-5">
+  <div class="card">
+    <div class="card-header h4">
+      הוספת לקוח חדש
+    </div>
+    <div class="card-body">
+      <form [formGroup]="customerForm" (ngSubmit)="onSubmit()">
+        <div class="h5 pb-1 border-bottom mb-4">
+          פרטים אישיים
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">שם מלא (עברית)</label>
+            <input class="form-control"
+                   formControlName="fullNameHe"
+                   id="fullNameHe"
+                   type="text" />
+            <validation-viewer [control]="customerForm.controls.fullNameHe" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">שם מלא (אנגלית)</label>
+            <input class="form-control"
+                   formControlName="fullNameEn"
+                   id="fullNameEn"
+                   type="text" />
+            <validation-viewer [control]="customerForm.controls.fullNameEn" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">תאריך לידה</label>
+            <input class="form-control"
+                   formControlName="birthDate"
+                   id="birthDate"
+                   type="date" />
+            <validation-viewer [control]="customerForm.controls.birthDate" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">מספר זהות</label>
+            <input class="form-control"
+                   formControlName="idNumber"
+                   id="idNumber"
+                   type="tel" />
+            <validation-viewer [control]="customerForm.controls.idNumber" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">עיר</label>
+            <select class="form-control"
+                    formControlName="city"
+                    id="city"
+                    type="number">
+              <option value="">בחר/י עיר</option>
+              <option *ngFor="let city of model.citiesList" [value]="city.code">{{city.code}} - {{city.description}} </option>
+            </select>
+
+            <validation-viewer [control]="customerForm.controls.city" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+        </div>
+
+        <div class="h5 pb-1 border-bottom mb-4">
+          פרטי חשבון
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">בנק</label>
+            <select class="form-control"
+                    (change)="fetchBrunches()"
+                    formControlName="bank"
+                    id="bank"
+                    type="number">
+              <option value="">בחר/י בנק</option>
+              <option *ngFor="let bank of model.banksList" [value]="bank.Code">{{bank.Code}} - {{bank.Description}} </option>
+            </select>
+            <validation-viewer [control]="customerForm.controls.bank" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">סניף</label>
+
+            <select class="form-control"
+                    formControlName="brunch"
+                    id="brunch"
+                    type="number"
+                    [disabled]="true">
+              <option value="">בחר/י סניף</option>
+              <option *ngFor="let brunch of model.bankBrunchesList" [value]="brunch.BranchNumber">{{brunch.BranchNumber}} - {{brunch.BranchName}} </option>
+            </select>
+            <validation-viewer [control]="customerForm.controls.brunch" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="font-weight-bold">מספר חשבון</label>
+            <input class="form-control"
+                   formControlName="accountNumber"
+                   id="accountNumber"
+                   type="tel" />
+            <validation-viewer [control]="customerForm.controls.brunch" [isSubmitted]="isSubmitted"></validation-viewer>
+          </div>
+        </div>
+
+        <div class="row">
+          <button class="btn btn-primary">שליחה</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\CustomerManagement.Services.deps.json
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\CustomerManagement.Services.dll
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\ref\CustomerManagement.Services.dll
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\CustomerManagement.Services.pdb
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\CustomerManagement.Core.dll
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\bin\Debug\net5.0\CustomerManagement.Core.pdb
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.csprojAssemblyReference.cache
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.AssemblyInfoInputs.cache
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.AssemblyInfo.cs
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.csproj.CoreCompileInputs.cache
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.csproj.CopyComplete
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.dll
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\ref\CustomerManagement.Services.dll
+C:\Users\משתמש\Desktop\CustomerManagement\CustomerManagement.Services\obj\Debug\net5.0\CustomerManagement.Services.pdb

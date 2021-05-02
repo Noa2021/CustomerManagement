@@ -1,0 +1,54 @@
+<div *ngIf="model.customers.length > 0 && model.isLoading">טוען...</div>
+<div *ngIf="model.customers.length == 0">לא נמצאו רשומות להצגה</div>
+<div *ngIf="model.customers.length > 0 && false == model.isLoading" class="container pt-5">
+  <table mat-table [dataSource]="model.customers" dir="rtl" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> מספר לקוח </th>
+      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fullNameHe">
+      <th mat-header-cell *matHeaderCellDef> שם מלא (עברית) </th>
+      <td mat-cell *matCellDef="let element"> {{element.fullNameHe}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="fullNameEn">
+      <th mat-header-cell *matHeaderCellDef> שם מלא (אנגלית) </th>
+      <td mat-cell *matCellDef="let element"> {{element.fullNameEn}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="birthDate">
+      <th mat-header-cell *matHeaderCellDef> תאריך לידה </th>
+      <td mat-cell *matCellDef="let element"> {{element.birthDate | date}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="idNumber">
+      <th mat-header-cell *matHeaderCellDef> מספר זהות </th>
+      <td mat-cell *matCellDef="let element"> {{element.idNumber}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="city">
+      <th mat-header-cell *matHeaderCellDef> עיר </th>
+      <td mat-cell *matCellDef="let element"> {{element.city}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="bank">
+      <th mat-header-cell *matHeaderCellDef> בנק </th>
+      <td mat-cell *matCellDef="let element"> {{element.bank}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="brunch">
+      <th mat-header-cell *matHeaderCellDef> סניף </th>
+      <td mat-cell *matCellDef="let element"> {{element.brunch}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="accountNumber">
+      <th mat-header-cell *matHeaderCellDef> מספר חשבון </th>
+      <td mat-cell *matCellDef="let element"> {{element.accountNumber}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="model.displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: model.displayedColumns;"></tr>
+  </table>
+</div>

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CustomerManagement.Services/1.0.0": {
+        "dependencies": {
+          "CustomerManagement.Core": "1.0.0"
+        },
+        "runtime": {
+          "CustomerManagement.Services.dll": {}
+        }
+      },
+      "CustomerManagement.Core/1.0.0": {
+        "runtime": {
+          "CustomerManagement.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CustomerManagement.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CustomerManagement.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div *ngIf="control.invalid && (control.dirty || control.touched || isSubmitted)" class="invalid-feedback d-block">
+  <div *ngIf="control.errors?.required">
+    שדה חובה
+  </div>
+  <div *ngIf="control.errors?.maxlength">
+    מקסימום תווים: {{control.errors?.maxlength?.requiredLength}}
+  </div>
+  <div *ngIf="control.errors?.minlength">
+    מינימום תווים: {{control.errors?.minlength?.requiredLength}}
+  </div>
+  <div *ngIf="control.errors?.max">
+    מספר מקסימלי: {{control.errors?.max.min}}
+  </div>
+  <div *ngIf="control.errors?.min">
+    מספר מינימלי: {{control.errors?.min.min}}
+  </div>
+  <div *ngIf="control.errors?.pattern">
+    התווים שהוזנו שגויים
+  </div>
+</div>
